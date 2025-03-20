@@ -12,18 +12,6 @@ h1 {
     margin-right: 0; 
 }
 
-body {
-    background-color: cornsilk;
-    font-family: Boldose, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
-    display: flex;  
-    flex-direction: column; 
-    align-items: center;
-    justify-content: flex-start; 
-}
-
 .button {
     display: inline-block;
     background-color: lightgreen;
@@ -37,7 +25,63 @@ body {
     transition: background-color 0.3s ease; 
 }
 
+body {
+    background-color: cornsilk;
+    font-family: Boldose, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    overflow: scroll;
+}
 
+
+p {
+    font-family: Boldose, sans-serif;
+    font-size: 16px; 
+    color: black; 
+    line-height: 1; 
+    text-align: justify;
+    margin: 5px 0; 
+    padding: 10px;
+}
+
+
+ul {
+    margin-right: auto; 
+    margin-top: 0;
+    padding-right: 8px;
+    width: fit-content; 
+}
+
+li {
+    font-size: 16px;
+}
+
+.sub-paragraph {
+    font-weight: bold; 
+    font-size: 18px; 
+    margin-top: 20px;
+}
+
+.img {
+    position: absolute;
+    bottom: 80px;  
+    left: 100px;    
+    width: 500px;  
+    height: auto;  
+}
+
+.img2{
+    position: absolute;
+    bottom: 80px;
+    left: 900px;
+    width: 500px;
+    height: auto;
+}
 
 footer {
     color: black;
