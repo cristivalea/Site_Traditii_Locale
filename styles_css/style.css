@@ -1,15 +1,8 @@
-h1 {
-    color: black;
-    border: 2px solid black;
-    padding: 20px;
-    text-align: center;
-    font-family: Boldose, sans-serif;
-    border-radius: 5px;
-    background-color: lightgreen;
-    width: 100%;  
-    box-sizing: border-box; 
-    margin-left: 0;
-    margin-right: 0; 
+
+html, body {
+    height: 100%; 
+    margin: 0;    
+    padding: 0;   
 }
 
 .button {
@@ -25,36 +18,55 @@ h1 {
     transition: background-color 0.3s ease; 
 }
 
+h1 {
+    color: black;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-family: Boldose, sans-serif;
+    border-radius: 5px;
+    background-color: lightgreen;
+    width: 100%;  
+    box-sizing: border-box; 
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+
 body {
     background-color: cornsilk;
     font-family: Boldose, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
-    display: flex;  
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start; 
-    overflow: scroll;
+    justify-content: flex-start;
+    overflow: auto;  
+    padding-bottom: 60px; 
 }
 
 
 p {
     font-family: Boldose, sans-serif;
-    font-size: 16px; 
-    color: black; 
-    line-height: 1; 
+    font-size: 16px;
+    color: black;
+    line-height: 1;
     text-align: justify;
-    margin: 5px 0; 
+    margin: 5px 0;
     padding: 10px;
 }
 
-
 ul {
-    margin-right: auto; 
+    margin-right: auto;
     margin-top: 0;
     padding-right: 8px;
-    width: fit-content; 
+    width: fit-content;
+}
+
+ol{
+    margin-right: auto;
+    margin-top: 0;
+    padding-right: 8px;
+    width: fit-content;
 }
 
 li {
@@ -62,26 +74,28 @@ li {
 }
 
 .sub-paragraph {
-    font-weight: bold; 
-    font-size: 18px; 
+    font-weight: bold;
+    font-size: 18px;
     margin-top: 20px;
 }
 
+
 .img {
     position: absolute;
-    bottom: 80px;  
-    left: 100px;    
-    width: 500px;  
-    height: auto;  
+    bottom: 70px;
+    left: 100px;
+    width: 500px;
+    height: auto;
 }
 
-.img2{
+.img2 {
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
     left: 900px;
     width: 500px;
     height: auto;
 }
+
 
 footer {
     color: black;
@@ -90,9 +104,9 @@ footer {
     text-align: center;
     border-radius: 5px;
     font-family: Boldose, sans-serif;
-    border-radius: 5px;
     background-color: lightgreen;
     width: 100%;
     box-sizing: border-box;
-    margin-top: auto; 
+    position: fixed; 
+    bottom: 0; 
 }
