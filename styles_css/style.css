@@ -1,10 +1,10 @@
 
 html, body {
-    height: 100%; 
-    margin: 0;    
-    padding: 0;   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto; 
 }
-
 .button {
     display: inline-block;
     background-color: lightgreen;
@@ -17,6 +17,13 @@ html, body {
     cursor: pointer;
     transition: background-color 0.3s ease; 
 }
+
+main {
+    flex-grow: 1;
+    min-height: calc(100vh - 120px); 
+    margin-bottom: 80px;
+}
+
 
 h1 {
     color: black;
@@ -33,6 +40,7 @@ h1 {
 }
 
 
+
 body {
     background-color: cornsilk;
     font-family: Boldose, sans-serif;
@@ -40,8 +48,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow: auto;  
-    padding-bottom: 60px; 
+    flex-grow: 1;
+    overflow: scroll; 
 }
 
 
@@ -81,32 +89,40 @@ li {
 
 
 .img {
-    position: absolute;
-    bottom: 70px;
-    left: 100px;
+    float:left;
+    bottom: 50px;
+    margin-left: 150px;
     width: 500px;
     height: auto;
 }
 
 .img2 {
-    position: absolute;
-    bottom: 70px;
-    left: 900px;
+    float: right;
+    bottom: 50px;
+    margin-right: 150px;
     width: 500px;
     height: auto;
 }
 
 
 footer {
-    color: black;
-    border: 2px solid black;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    font-family: Boldose, sans-serif;
-    background-color: lightgreen;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    box-sizing: border-box;
-    position: fixed; 
-    bottom: 0; 
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+}
+
+.img3 {
+    bottom: 70px;
+    float: left;
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.imag-parag {
+    text-align: justify; 
+    clear: both; 
 }
