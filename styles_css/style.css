@@ -126,3 +126,45 @@ footer {
     text-align: justify; 
     clear: both; 
 }
+
+.img4{
+    display : block;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    float: right;
+    width: auto;
+    height: 200px;
+    margin-left: 50px;
+}
+
+
+.img-parag-left{
+    margin-right: 20px;
+    text-align: justify; 
+    clear: both; 
+}
+
+.img-parag-left-right {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+.img-parag-left-right img {
+    width: 250px; 
+    height: auto; 
+}
+
+
+.img-parag-left-right p {
+    flex: 1; 
+    text-align: justify; 
+}
+
+.img-centrata-mijloc{
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
