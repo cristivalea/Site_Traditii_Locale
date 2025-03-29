@@ -21,9 +21,9 @@ html, body {
 main {
     flex-grow: 1;
     min-height: calc(100vh - 120px); 
-    margin-bottom: 80px;
+    padding-bottom: 100px; 
+    margin-bottom: 0;
 }
-
 
 h1 {
     color: black;
@@ -53,7 +53,7 @@ body {
 }
 
 
-p {
+.p {
     font-family: Boldose, sans-serif;
     font-size: 16px;
     color: black;
@@ -63,21 +63,22 @@ p {
     padding: 10px;
 }
 
-ul {
+.ul {
+    margin-right: auto;
+    margin-top: 0;
+    padding-right: 8px;
+    width: fit-content;
+    overflow: visible;
+}
+
+.ol{
     margin-right: auto;
     margin-top: 0;
     padding-right: 8px;
     width: fit-content;
 }
 
-ol{
-    margin-right: auto;
-    margin-top: 0;
-    padding-right: 8px;
-    width: fit-content;
-}
-
-li {
+.li {
     font-size: 16px;
 }
 
@@ -191,8 +192,15 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 600px) {
     table {
         font-size: 14px;
     }
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    height: 60vh;
 }
